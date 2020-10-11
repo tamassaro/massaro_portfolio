@@ -18,22 +18,24 @@ body {
 
 .hero-subtext {
     text-align: left;
+    background-color: white;
 }
 
 .hero-name {
     font-size: 4.1em;
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 900;
-    padding: 0.1em 0 0.8em;
+    padding: 0.4em 0 0.6em;
     letter-spacing: 1.5px;
     margin: 0;
 }
 
-#duotone-photo {
-    width: 6em;
-    display: flexbox;
-    padding: 1.5em;
-    z-index: 1;
+#pink-duotone-photo {
+    right: 10px;
+    position: absolute;
+    width: 10em;
+    padding: 0em;
+    z-index: -10;
 }
 
 .project1 {
@@ -86,5 +88,13 @@ body {
 
     .project1 {
         grid-area: main;
+    }
+
+    #pink-duotone-photo {
+        right: 20px;
+        position: absolute;
+        width: 20em;
+        padding: 1.5em;
+        z-index: -10;
     }
 }
