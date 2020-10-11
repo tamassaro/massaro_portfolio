@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anthony Massaro - Portfolio</title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="nav.css" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        />
+        <!-- Google Fonts -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
+        <!-- Bootstrap core CSS -->
+        <!-- Bootstrap core CSS -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Material Design Bootstrap -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css"
+            rel="stylesheet"
+        />
+        <!--Materialize-->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+            rel="stylesheet"
+        />
+    </head>
+
+    <header>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" id="closeNav"
+                >&times;</a
+            >
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <body>
+            <div>
+                <!-- <img
+                    id="duotone-photo"
+                    src="/images/duotone-photo.png"
+                    alt="Anthony Massaro"
+                /> -->
+            </div>
+
+            <div class="hero">
+                <p class="hero-hello">Hello, my name is</p>
+                <h1 class="hero-name">
+                    Anthony Massaro<a style="color: #69f0ae">.</a>
+                </h1>
+                <p class="hero-subtext">
+                    I’m a Harrisburg-based web designer and front-end  developer with a focus
+                    on functionality through UI design. Obsessed with punchy
+                    color palettes, type, and illustrations, my goal is to blur
+                    the line between websites and works of art.
+                </p>
+            </div>
+
+            <section class="grid-container">
+                <div class="project1"></div>
+                <div class="project2"></div>
+                <div class="project3"></div>
+            </section>
+
+            <!-- JQuery -->
+            <script
+                type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            ></script>
+            <!-- Bootstrap tooltips -->
+            <script
+                type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+            ></script>
+            <!-- Bootstrap core JavaScript -->
+            <script
+                type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+            ></script>
+            <!-- MDB core JavaScript -->
+            <script
+                type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"
+            ></script>
+            <script type="text/javascript" src="/main.js"></script>
+        </body>
+
+        <footer>
+            <div class="fixed-action-btn" style="bottom: 25px; right: 25px">
+                <a class="btn-floating btn-lg green accent-2" id="openNav">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <div class="page-footer blue">
+                <p>&#169 2020 - Anthony Angelo Massaro</p>
+            </div>
+        </footer>
+
+        <script>
+            $('#openNav').on('click', function () {
+                $('#myNav').css('width', '100%');
+            });
+
+            $('#closeNav').on('click', function () {
+                $('#myNav').css('width', '0%');
+            });
+        </script>
+    </main>
+</html>

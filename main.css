@@ -1,0 +1,90 @@
+@import url('https://use.typekit.net/oom8olm.css');
+
+body {
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.hero {
+    padding: 2em;
+    text-align: left;
+}
+
+.hero-hello {
+    margin: 0;
+}
+
+.hero-subtext {
+    text-align: left;
+}
+
+.hero-name {
+    font-size: 4.1em;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 900;
+    padding: 0.1em 0 0.8em;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+#duotone-photo {
+    width: 6em;
+    display: flexbox;
+    padding: 1.5em;
+    z-index: 1;
+}
+
+.project1 {
+    padding: 10em;
+    background-color: black;
+}
+
+.project2 {
+    padding: 10em;
+    background-color: darkgrey;
+}
+
+.project3 {
+    padding: 10em;
+    background-color: lightslategray;
+}
+
+.page-footer p {
+    color: white;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-left: 0.6em;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+@media (min-width: 730px) {
+    p {
+        font-size: 1.6em;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            'main side1'
+            'main side2';
+        align-items: stretch;
+    }
+
+    .hero-subtext {
+        max-width: 70%;
+    }
+
+    .hero-name {
+        padding-top: 0.4em;
+        font-size: 6em;
+    }
+
+    .project1 {
+        grid-area: main;
+    }
+}
