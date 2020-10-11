@@ -14,11 +14,13 @@ body {
 
 .hero-hello {
     margin: 0;
+    padding-top: 1em;
 }
 
 .hero-subtext {
     text-align: left;
-    background-color: white;
+    display: block;
+    orphans: 3;
 }
 
 .hero-name {
@@ -62,6 +64,14 @@ body {
     font-weight: 900;
     letter-spacing: 1px;
 }
+
+@media (min-width: 540px) {
+    #pink-duotone-photo {
+        width: 14em;
+        margin-right: 1.8em;
+    }
+}
+
 @media (min-width: 730px) {
     p {
         font-size: 1.6em;
@@ -93,8 +103,23 @@ body {
     #pink-duotone-photo {
         right: 20px;
         position: absolute;
-        width: 20em;
+        width: 22em;
         padding: 1.5em;
+        padding-top: 0;
+        padding-right: 2em;
         z-index: -10;
+    }
+}
+
+@media (min-width: 1020px) {
+    .media-break {
+        display: none;
+    }
+
+    #pink-duotone-photo {
+        width: 26em;
+    }
+    .hero-subtext {
+        max-width: 65%;
     }
 }
