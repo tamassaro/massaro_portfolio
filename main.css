@@ -15,6 +15,8 @@ body {
 .hero-hello {
     margin: 0;
     padding-top: 1em;
+    display: block;
+    margin-left: 1em;
 }
 
 .hero-subtext {
@@ -27,7 +29,7 @@ body {
     font-size: 14vw;
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 900;
-    padding: 0.4em 0 0.6em;
+    padding: 0em 0 0.6em;
     letter-spacing: 1.5px;
     margin: 0;
 }
@@ -55,29 +57,37 @@ body {
     background-color: lightslategray;
 }
 
-.page-footer p {
+.footer p {
+    text-align: right;
+    background-color: black;
     color: white;
     margin: 0;
-    padding-bottom: 1em;
-    padding-left: 0.6em;
+    padding: 0.8em 0.6em;
     font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 900;
+    font-weight: 400;
+    font-size: 2vw;
     letter-spacing: 1px;
 }
 
 @media (min-width: 540px) {
+    p {
+        font-size: 1.2em;
+    }
     #pink-duotone-photo {
         width: 14em;
         margin-right: 1.8em;
     }
 
     .hero-name {
-        padding-top: 0.4em;
         font-size: 16vw;
     }
 }
 
 @media (min-width: 730px) {
+    .landing-page {
+        height: 100vh;
+    }
+
     p {
         font-size: 1.6em;
     }
@@ -97,7 +107,6 @@ body {
     }
 
     .hero-name {
-        padding-top: 0.4em;
         font-size: 12vw;
     }
 
@@ -131,6 +140,7 @@ body {
     }
 
     .hero-name {
+        padding-top: 0.3em;
         font-size: 8vw;
     }
 
@@ -140,7 +150,8 @@ body {
         margin-right: 2em;
     }
     .hero-subtext {
-        max-width: 65%;
+        max-width: 55%;
+        margin-bottom: 3em;
     }
 }
 
