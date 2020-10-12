@@ -47,7 +47,7 @@
     }
     .overlay .closebtn {
         font-size: 40px;
-        bottom: 0px;
+        bottom: 25px;
         right: 35px;
     }
 }
