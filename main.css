@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding-top: 1em;
     display: block;
-    margin-left: 1em;
+    text-align: left;
 }
 
 .hero-subtext {
@@ -58,7 +58,7 @@ body {
 }
 
 .footer p {
-    text-align: right;
+    text-align: left;
     background-color: black;
     color: white;
     margin: 0;
