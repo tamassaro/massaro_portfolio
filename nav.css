@@ -36,8 +36,8 @@
 
 .overlay .closebtn {
     position: absolute;
-    bottom: 0px;
-    right: 25px;
+    bottom: 25px;
+    right: 35px;
     font-size: 60px;
 }
 

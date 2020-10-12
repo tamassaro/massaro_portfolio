@@ -128,9 +128,9 @@ body {
 
 @media (min-width: 900px) {
     #pink-duotone-photo {
-        width: 26em;
+        width: 28em;
         padding-right: 0em;
-        margin-right: 2.6em;
+        margin-right: 1em;
     }
 }
 
@@ -145,7 +145,7 @@ body {
     }
 
     #pink-duotone-photo {
-        width: 24em;
+        width: 31em;
         padding-right: 0em;
         margin-right: 2em;
     }
@@ -165,7 +165,7 @@ body {
     }
 
     #pink-duotone-photo {
-        width: 26em;
+        width: 34em;
     }
     .hero-subtext {
         max-width: 65%;
