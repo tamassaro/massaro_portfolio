@@ -65,10 +65,15 @@ body {
     padding: 0.8em 0.6em;
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 1.2em;
     letter-spacing: 1px;
 }
 
+@media (max-width: 540px) {
+    .footer p {
+        font-size: 0.8em;
+    }
+}
 @media (min-width: 540px) {
     p {
         font-size: 1.2em;
