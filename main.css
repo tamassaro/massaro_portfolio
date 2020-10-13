@@ -8,6 +8,7 @@ body {
 }
 
 .hero {
+    margin-left: 2em;
     padding: 2em;
     text-align: left;
 }
@@ -22,7 +23,8 @@ body {
 .hero-subtext {
     text-align: left;
     display: block;
-    orphans: 3;
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 20px;
 }
 
 .hero-name {
@@ -37,7 +39,7 @@ body {
 #pink-duotone-photo {
     right: 10px;
     position: absolute;
-    width: 10em;
+    width: 14em;
     padding: 0em;
     z-index: -10;
 }
@@ -73,13 +75,25 @@ body {
     .footer p {
         font-size: 0.8em;
     }
+    #pink-duotone-photo {
+        right: 10px;
+        position: absolute;
+        width: 14em;
+        padding: 0em;
+        z-index: -10;
+    }
+    .hero {
+        margin-left: 0em;
+        padding: 2em;
+        text-align: left;
+    }
 }
 @media (min-width: 540px) {
     p {
         font-size: 1.2em;
     }
     #pink-duotone-photo {
-        width: 14em;
+        width: 16em;
         margin-right: 1.8em;
     }
 
@@ -156,7 +170,7 @@ body {
     }
     .hero-subtext {
         max-width: 55%;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
     }
 }
 
