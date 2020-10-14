@@ -6,10 +6,52 @@ body {
     font-weight: 300;
     margin: 0 auto;
 }
+.topnav {
+    right: 0.8em;
+    padding: 20px 2em;
+    position: absolute;
+    z-index: 10;
+}
+
+.topnavlink {
+    padding: 20px 0 20px 40px;
+    font-family: 'neue-haas-grotesk-text', arial, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #69f0afa2;
+}
+
+.topnavlink:hover {
+    color: #212529;
+}
+
+.topnavlink:active {
+    color: #212529;
+}
+
+/* .hometopnavlink {
+    padding: 20px 1em 20px 40px;
+    font-family: 'neue-haas-grotesk-text', arial, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #69f0af;
+} */
+
+/* .hometopnav {
+    left: 0em;
+    padding: 20px 1em;
+    position: absolute;
+    z-index: 10;
+} */
+
+.landing-page {
+    padding-top: 2.4em;
+}
 
 .hero {
     margin-left: 2em;
-    padding: 2em;
+    padding: 0 2em;
+    padding-top: 2em;
     text-align: left;
 }
 
@@ -20,20 +62,26 @@ body {
     text-align: left;
 }
 
+.hero-name {
+    font-size: 14vw;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 900;
+    padding: 0.2em 0 0.6em;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
 .hero-subtext {
     text-align: left;
     display: block;
     background-color: rgba(255, 255, 255, 0.486);
     border-radius: 20px;
+    padding-bottom: 1em;
 }
 
-.hero-name {
-    font-size: 14vw;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 900;
-    padding: 0em 0 0.6em;
-    letter-spacing: 1.5px;
-    margin: 0;
+.fa-caret-down {
+    color: #212529;
+    z-index: 100;
 }
 
 #pink-duotone-photo {
@@ -46,7 +94,7 @@ body {
 
 .project1 {
     padding: 10em;
-    background-color: black;
+    background-color: grey;
 }
 
 .project2 {
@@ -86,6 +134,14 @@ body {
         margin-left: 0em;
         padding: 2em;
         text-align: left;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    i {
+        display: none;
     }
 }
 @media (min-width: 540px) {
