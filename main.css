@@ -1,11 +1,11 @@
 @import url('https://use.typekit.net/oom8olm.css');
-
 body {
     font-family: myriad-pro, sans-serif;
     font-style: normal;
     font-weight: 300;
     margin: 0 auto;
 }
+
 .topnav {
     right: 0.8em;
     padding: 20px 2em;
@@ -18,7 +18,7 @@ body {
     font-family: 'neue-haas-grotesk-text', arial, sans-serif;
     font-weight: 700;
     font-size: 1em;
-    color: #69f0afa2;
+    color: #69f0af;
 }
 
 .topnavlink:hover {
@@ -29,21 +29,24 @@ body {
     color: #212529;
 }
 
-/* .hometopnavlink {
+.hometopnavlink {
     padding: 20px 1em 20px 40px;
     font-family: 'neue-haas-grotesk-text', arial, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1em;
     color: #69f0af;
-} */
+}
 
-/* .hometopnav {
+.hometopnavlink:hover {
+    color: #212529;
+}
+
+.hometopnav {
     left: 0em;
     padding: 20px 1em;
     position: absolute;
     z-index: 10;
-} */
-
+}
 .landing-page {
     padding-top: 2.4em;
 }
@@ -107,6 +110,21 @@ body {
     background-color: lightslategray;
 }
 
+.project4 {
+    padding: 10em;
+    background-color: black;
+}
+
+.project5 {
+    padding: 10em;
+    background-color: blue;
+}
+
+.project6 {
+    padding: 10em;
+    background-color: red;
+}
+
 .footer p {
     text-align: left;
     background-color: black;
@@ -130,20 +148,23 @@ body {
         padding: 0em;
         z-index: -10;
     }
+    .landing-page {
+        padding-top: 0em;
+    }
     .hero {
         margin-left: 0em;
         padding: 2em;
         text-align: left;
     }
-
-    .topnav {
+    .topnav,
+    .hometopnav {
         display: none;
     }
-
     i {
         display: none;
     }
 }
+
 @media (min-width: 540px) {
     p {
         font-size: 1.2em;
@@ -152,7 +173,6 @@ body {
         width: 16em;
         margin-right: 1.8em;
     }
-
     .hero-name {
         font-size: 16vw;
     }
@@ -162,31 +182,60 @@ body {
     .landing-page {
         height: 100vh;
     }
-
     p {
         font-size: 1.6em;
     }
-
-    .grid-container {
+    .grid-container-1 {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+        -ms-grid-rows: 50% 50%;
         grid-template-rows: 50% 50%;
         grid-template-areas:
             'main side1'
             'main side2';
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
         align-items: stretch;
     }
-
+    .grid-container-2 {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            'side1 main'
+            'side2 main';
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
     .hero-subtext {
         max-width: 70%;
     }
-
     .hero-name {
         font-size: 12vw;
     }
-
     .project1 {
         grid-area: main;
+    }
+    .project2 {
+        grid-area: side1;
+    }
+    .project3 {
+        grid-area: side2;
+    }
+    .project4 {
+        grid-area: main;
+    }
+    .project5 {
+        grid-area: side1;
+    }
+    .project6 {
+        grid-area: side2;
     }
 
     #pink-duotone-photo {
@@ -213,12 +262,10 @@ body {
     .media-break {
         display: none;
     }
-
     .hero-name {
         padding-top: 0.3em;
         font-size: 8vw;
     }
-
     #pink-duotone-photo {
         width: 31em;
         padding-right: 0em;
@@ -234,11 +281,9 @@ body {
     .media-break {
         display: none;
     }
-
     .hero-name {
         font-size: 8vw;
     }
-
     #pink-duotone-photo {
         width: 34em;
     }
@@ -254,3 +299,4 @@ body {
         margin-right: 14em;
     }
 }
+/*# sourceMappingURL=main.css.map */

@@ -35,6 +35,7 @@
         />
         <link rel="stylesheet" href="main.css" />
         <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="contact.css">
         <!-- End head section scripts -->
     </head>
 
@@ -45,7 +46,7 @@
         <div class="topnav">
             <a href="#" class="topnavlink">Projects</a>
             <a href="#" class="topnavlink">About</a>
-            <a href="./contact.html" class="topnavlink">Contact</a>
+            <a href="#" class="topnavlink">Contact</a>
         </div>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" id="closeNav"
@@ -55,50 +56,105 @@
                 <a href="#">Home</a>
                 <a href="#">Projects</a>
                 <a href="#">About</a>
-                <a href="./contact.html">Contact</a>
+                <a href="#">Contact</a>
             </div>
         </div>
 
     </header>
 
-        <body>
-            <div class="landing-page">
+<body>
+           
+<section class="mb-4 form">
 
-                <div>
-                    <img
-                        id="pink-duotone-photo"
-                        src="images/pink_duotone_portrait.png"
-                        alt="Anthony Massaro"
-                    />
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4" id="form-header">Talk to me.</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Questions? Concerns? Tips on brewing the perfect cup of coffee? Just fill out the form below.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
                 </div>
+                <!--Grid row-->
 
-                <div class="hero">
-                    <p class="hero-hello">Hello, my name is</p>
-                    <h1 class="hero-name">
-                        Anthony <br class="media-break"> Massaro<a style="color: #69f0ae">.</a>
-                    </h1>
-                    <p class="hero-subtext">
-                        I’m a Harrisburg-based web designer and frontend  developer with a focus
-                        on functionality through UI design. Obsessed with punchy
-                        color palettes, type, and illustrations, my goal is to blur
-                        the line between websites and&nbsp;works&nbsp;of&nbsp;art.
-                        <br>
-                        <i class="fas fa-caret-down fa-2x"></i>
-                    </p>
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
+                <!--Grid row-->
 
-            <div class="grid-container-1">
-                <div class="project1"></div>
-                <div class="project2"></div>
-                <div class="project3"></div>
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
-            <div class="grid-container-2">
-                <div class="project4"></div>
-                <div class="project5"></div>
-                <div class="project6"></div>
-            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x "></i>
+                    <p>Harrisburg, PA 17011, USA</p>
+                </li>
+
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>tamassaro11@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
 
             <!-- JQuery -->
             <script

@@ -1,0 +1,11 @@
+section.form {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    width: 80vw;
+    margin: auto;
+}
+
+#form-header {
+    font-family: 'neue-haas-grotesk-text', arial, sans-serif;
+    font-weight: 800;
+}
