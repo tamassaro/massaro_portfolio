@@ -1,6 +1,6 @@
 @import url('https://use.typekit.net/oom8olm.css');
 body {
-    font-family: myriad-pro, sans-serif;
+    font-family: myriad-pro, sans-serif !important;
     font-style: normal;
     font-weight: 300;
     margin: 0 auto;
